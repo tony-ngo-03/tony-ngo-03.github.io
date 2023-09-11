@@ -1,74 +1,46 @@
-.top_banner{
+
+.top_banner {
     background-color: white;
     height: 15%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 
-.middle_banner{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.top_button_background {
+    display: flex;
 }
 
-.middle_banner_text{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-
-
-
-
-
-
-.bottom_banner{
+.bottom_banner {
+    height: 15%;
+    display: flex;
+    left: 0;
+    bottom: 0;
     background-color: black;
-    height: 5%;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
 }
 
-.bottom_banner_button_background{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
 
-.bottom_banner_button_background button{
+.bottom_banner button {
     font-family: "Georgia";
     background-color: black;
     border: none;
     color: gray;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.top_button_background{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.top_button_background {
+    position: relative;
 }
 
-
-
-.top_button_background button{
+.top_button_background button {
     font-family: "Georgia";
     background-color: white;
     border: none;
@@ -77,9 +49,5 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 24px;
-}
-body{
-    background: #b86b77;
-    margin: 0;
+    font-size: 30px;
 }

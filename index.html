@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="top_banner">
-            <div class="top_button_background">
-                <button onclick="window.location.href = 'about.html';">About Me</button>
-                <button onclick="window.location.href = 'projects.html';">Projects</button>
-                <button onclick="window.location.href = 'contact.html';">Contact</button>
-                <button onclick="window.location.href = 'games.html';">Games</button>
-            </div>
-        </div>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <style>
+        body {
+            background: #b86b77;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        
+        .middle_banner {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .middle_banner_text {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
 
-        <div class="middle_banner">
-            <div class="middle_banner_text">
-                <p1 style="font-size: 125px;">TONY NGO</p1>
-                <br>
-                <text style="font-size: 20px;">.....</text>
-                <br>
-                <text style="font-size: 25px;">CS Student @ UT Austin</text>
-            </div>
-        </div>
+        .middle_banner_text h1 {
+            font-size: 85px;
+            margin: 0;
+        }
 
-        
-        <div class="bottom_banner">
-            <div class="bottom_banner_button_background">
-                <button onclick="window.location.href = 'home.html'">Home</button>
-            </div>
+        .middle_banner_text p {
+            font-size: 25px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="top_banner">
+        <nav class="top_button_background">
+            <button onclick="goToPage('about')">About Me</button>
+            <button onclick="goToPage('projects')">Projects</button>
+            <button onclick="goToPage('contact')">Contact</button>
+            <button onclick="goToPage('games')">Games</button>
+        </nav>
+    </header>
+
+    <main class="middle_banner">
+        <div class="middle_banner_text">
+            <h1>TONY NGO</h1>
+            <p class="dots">.....</p>
+            <p class="cs-student">CS Student @ UT Austin</p>
         </div>
-        
-        
-        
-        
-    </body>
+    </main>
+    <footer class="bottom_banner">
+        <button onclick="goToPage('index')">Home</button>
+    </footer>
+</body>
 </html>
