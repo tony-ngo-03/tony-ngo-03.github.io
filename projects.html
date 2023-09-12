@@ -8,6 +8,57 @@
             background: #b86b77;
             margin: 0;
         }
+
+        #work_in_progress_projects{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        #simulator_wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10%;
+        }
+
+        #simulator_wrapper img{
+            width: 200px;
+            height: 200px;
+        }
+
+        #simulator_wrapper p{
+            margin-left: 5%;
+            font-size: medium;
+        }
+        
+        #completed_projects{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #pong_wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10%;
+        }
+
+        #pong_wrapper img{
+            width: 200px;
+            height: 200px;
+        }
+
+        #pong_wrapper p{
+            margin-left: 5%;
+            font-size: medium;
+
+        }
+
+        .image_and_text{
+            display: inline-flex;
+        }
+        
     </style>
 </head>
 <body>
@@ -21,7 +72,27 @@
     </header>
 
     <main>
-        <h1 style="font-size: 50px; text-align: center;">WORK IN PROGRESS</h1>
+        <div id="work_in_progress_projects">
+            <h1 style="font-size: 50px; text-align: center;">WORK IN PROGRESS</h1>
+            <div id="simulator_wrapper">
+                <h1>Sisyphus Simulator</h1>
+                <div class="image_and_text">
+                    <img>
+                    <p>Text</p>
+                </div>
+            </div>
+        </div>
+        <div id="completed_projects">
+            <h1 style="font-size: 50px; text-align: center;">COMPLETED</h1>
+            <div id="pong_wrapper">
+                <h1>Pong</h1>
+                <div class="image_and_text">
+                    <img>
+                    <p>Text</p>
+                </div>
+                
+            </div>
+        </div>
     </main>
     
 

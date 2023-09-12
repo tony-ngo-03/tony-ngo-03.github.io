@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -33,9 +35,26 @@
             font-size: 24px;
         }
 
-        #display_songs_wrapper iframe{
-            display: inline;
-            
+        #display_songs_wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .song_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe{
+            width: 420px;
+            height: 315px;
+            margin-top: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 10%;
         }
 
     </style>
@@ -54,7 +73,7 @@
         <div id="about_me">
             <img src="" height="200" width="200">
             <h1>Tony Ngo</h1>
-            <h1>Majoring in CS & Minoring in Business</h1>
+            <h1>Majoring in Computer Science & Minoring in Business</h1>
             <p>I am a passionate problem solver with a deep love for computer science. Ever since joining
             that robotics club in sixth grade, I have always been fascinated by the art of breaking down
             complex issues into small, managable components and finding solutions. Beyond the classroom,
@@ -62,21 +81,14 @@
             development. My favorites so far are this website, Pong, and Sisyphus Simulator. In my free 
             time, I love to rollerskate, read, and listen to music! My goal is to continue exploring
             and contributing to innovative solutions and ideas that make a meaningful impact in this world.
-
-            
             </p>
         </div>
         <div id="display_songs_wrapper">
             <h1>Here are some of my favorite songs right now!</h1>
-            <iframe width="420" height="315">
+            <div class="song_container">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5SMCxRA6hB2jEhroaYfw6N?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
 
-            </iframe>
-            <iframe width="420" height="315">
-
-            </iframe>
-            <iframe width="420" height="315">
-
-            </iframe>
         </div>
 
         
