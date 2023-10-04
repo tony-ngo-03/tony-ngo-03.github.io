@@ -10,6 +10,21 @@
     z-index: 9999;
 }
 
+/* #testing{
+    display: flex;
+    flex-direction: column;
+}
+
+#testing img{
+    width: 200px;
+    height: 200px;
+}
+
+#testing p{
+    max-width: fit-content;
+    word-wrap: break-word;
+} */
+
 
 .top_button_background {
     display: flex;

@@ -9,54 +9,22 @@
             margin: 0;
         }
 
-        #work_in_progress_projects{
+        #project_container{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-        }
-        #simulator_wrapper{
-            display: flex;
-            flex-direction: column;
+            align-items: center;
             justify-content: center;
             margin-left: 10%;
+            margin-bottom: 5%;
         }
 
-        #simulator_wrapper img{
+        #project_container img{
             width: 200px;
             height: 200px;
         }
 
-        #simulator_wrapper p{
-            margin-left: 5%;
-            font-size: medium;
-        }
-        
-        #completed_projects{
-            display: flex;
-            flex-direction: column;
-        }
-
-        #pong_wrapper{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 10%;
-        }
-
-        #pong_wrapper img{
-            width: 200px;
-            height: 200px;
-        }
-
-        #pong_wrapper p{
-            margin-left: 5%;
-            font-size: medium;
-
-        }
-
-        .image_and_text{
-            display: inline-flex;
+        #project_container p{
+            font-size: 20px;
+            padding-left: 20px;
         }
         
     </style>
@@ -66,31 +34,34 @@
         <nav class="top_button_background">
             <button onclick="window.location.href = 'about.html'">About Me</button>
             <button onclick="window.location.href = 'projects.html'">Projects</button>
-            <button onclick="window.location.href = 'contact.html'">Contact</button>
-            <button onclick="window.location.href = 'games.html'">Games</button>
+            <!-- <button onclick="window.location.href = 'contact.html'">Contact</button> -->
+            <!-- <button onclick="window.location.href = 'games.html'">Games</button> -->
         </nav>
     </header>
 
     <main>
-        <div id="work_in_progress_projects">
-            <h1 style="font-size: 50px; text-align: center;">WORK IN PROGRESS</h1>
-            <div id="simulator_wrapper">
+        <h1 style="font-size: 50px; text-align: center;">WORK IN PROGRESS</h1>
+        <div id="project_container">
+            <div>
                 <h1>Sisyphus Simulator</h1>
-                <div class="image_and_text">
-                    <img>
-                    <p>Text</p>
-                </div>
+                <img>
+            </div>
+            <div>
+                <p>
+                    Sisyphus Simulator is an exciting and ambitious project that I've been working on since July 2023. This 3D role-playing game, built entirely using C# in the Unity Engine, serves as a testament to my passion and expertise in game development. I've taken on the role of project lead, handling everything from initial concept development to coding, game mechanics design, and asset integration. Throughout the development process, I've encountered and overcome various technical challenges, ensuring that the game delivers a seamless and enjoyable gaming experience. Sisyphus Simulator is a true labor of love, and I'm excited to share it with the world as it continues to evolve.
+                </p> 
             </div>
         </div>
-        <div id="completed_projects">
-            <h1 style="font-size: 50px; text-align: center;">COMPLETED</h1>
-            <div id="pong_wrapper">
+        <h1 style="font-size: 50px; text-align: center;">COMPLETED</h1>
+        <div id="project_container">
+            <div>
                 <h1>Pong</h1>
-                <div class="image_and_text">
-                    <img>
-                    <p>Text</p>
-                </div>
-                
+                <img>
+            </div>
+            <div>
+                <p>
+                    Completing Pong in Python using the Pygame library has been a captivating journey. From the inception of this project to its ongoing development, I've dedicated my time and expertise to bring this classic game to life. Serving as both the creator and developer, I've handled every aspect of the project, including game design, Python coding, and Pygame library integration. Along the way, I've faced and conquered numerous technical challenges to ensure that the game runs smoothly and offers an enjoyable gaming experience. Pong in Python showcases my passion for game development and my commitment to creating engaging and entertaining games.
+                </p> 
             </div>
         </div>
     </main>
