@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <style>
         body{
             background: #b86b77;
@@ -62,9 +63,9 @@
 <body>
     <header class="top_banner">
         <nav class="top_button_background">
-            <button onclick="window.location.href = 'about.html'">About Me</button>
-            <button onclick="window.location.href = 'projects.html'">Projects</button>
-            <!-- <button onclick="window.location.href = 'games.html'">Games</button> -->
+            <button onclick="goToPage('about')">About Me</button>
+            <button onclick="goToPage('projects')">Projects</button>
+            <button onclick="goToPage('weather')">Weather</button>
         </nav>
     </header>
 
