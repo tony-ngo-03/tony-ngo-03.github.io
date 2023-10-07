@@ -59,14 +59,11 @@ cityForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const cityInput = document.getElementById("city");
   const cityText = cityInput.value.trim();
-
   const stateInput = document.getElementById("state");
   const stateText = stateInput.value.trim();
   getLatLong(cityText, stateText)
     .then(location => {
-      const latitude = location[0];
-      const longitude = location[1];
-      const url = getUrl(latitude, longitude);
+      const url = getUrl(location[0], location[1]);
       getTemp(url);
     })
     .catch(error => {
