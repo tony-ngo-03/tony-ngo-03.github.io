@@ -4,7 +4,6 @@
     <title>Weather</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
-    <script src="test.js"></script>
     <style>
         body {
             background: #b86b77;
@@ -50,12 +49,19 @@
 
     <main class="middle_banner">
         <div class="middle_banner_text">
-            
+            <form id="cityForm">
+                <label for="city">City</label>
+                <input type="text" id="city">
+                <label for="state">State</label>
+                <input type="text" id="state"><br>
+                <input type="submit" value="Submit">
+            </form>
             <h1 id="temperature"></h1>
         </div>
     </main>
     <footer class="bottom_banner">
         <button onclick="goToPage('index')">Home</button>
     </footer>
+    <script src="test.js"></script>
 </body>
 </html>
