@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Weather</title>
+    <title>What should I Wear?</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <style>
@@ -11,29 +11,38 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 20vh;
+            min-height: 30vh;
         }
         
         .middle_banner {
-            position: relative;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start; /* Vertically align to the top */
+            align-items: center; /* Horizontally center the content */
+            height: 100vh; /* Make sure the container takes the full viewport height */
+            margin-top: 5%;
+        }
+
+        #cityForm {
+            text-align: center; /* Center the form contents horizontally within #cityForm */
+            margin-bottom: 20px; /* Add some margin to separate form and temperature */
+        }
+
+        #testing {
+            text-align: center; /* Center the content horizontally within #testing */
+            flex: 1; /* Allow #testing to expand and take remaining vertical space */
+            font-size: xx-large;
         }
         
-        .middle_banner_text {
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        #temperature {
+            margin: 0; /* Remove default margins */
         }
 
-        .middle_banner_text h1 {
-            font-size: 85px;
-            margin: 0;
-        }
 
-        .middle_banner_text p {
-            font-size: 25px;
-            margin: 0;
-        }
+
+        
+        
     </style>
 </head>
 <body>
@@ -41,21 +50,23 @@
         <nav class="top_button_background">
             <button onclick="goToPage('about')">About Me</button>
             <button onclick="goToPage('projects')">Projects</button>
-            <button onclick="goToPage('weather')">Weather</button>
+            <button onclick="goToPage('weather')">What should I Wear?</button>
         </nav>
     </header>
 
     <main class="middle_banner">
-        <div class="middle_banner_text">
+        <h1>Enter your location:</h1>
+        <div>
             <form id="cityForm">
                 <label for="city">City</label>
                 <input type="text" id="city">
                 <label for="state">State</label>
-                <input type="text" id="state"><br>
+                <input type="text" id="state">
                 <input type="submit" value="Submit">
             </form>
-            <h1 id="temperature"></h1>
-            <h1 id="suggestion"></h1>
+        </div>
+        <div id="testing">
+            <h1 id="temperature"></h1>  
         </div>
     </main>
     <footer class="bottom_banner">

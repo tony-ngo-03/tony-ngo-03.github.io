@@ -12,7 +12,7 @@ function getTemp(url){
         if (!response.ok) {
             throw new Error('Network response was not ok');
           }
-          return response.json(); // This parses the response body as JSON
+          return response.json();
     })
     .then(data => {
         const now = new Date();
