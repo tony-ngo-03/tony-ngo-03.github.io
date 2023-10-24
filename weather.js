@@ -7,6 +7,23 @@ function formateDate(date) {
     return `${year}-${month}-${day}T${hours}:${minutes}`;
 }
 
+function rain(rainArray, timeArray, index){
+  let inner = "";
+  for(let j = index; j < rainArray.length; j++){
+    if(rainArray[j] > 0){
+      inner += timeArray[j].substring(11) + " : " + String(parseFloat(rainArray[j]).toFixed(1) * 100) + "%, ";
+    }
+  }
+  if(inner != ""){
+    document.getElementById("rainHeader").innerHTML = "Chance of Rain:";
+  }
+  document.getElementById("rain").innerHTML = inner;
+}
+
+function getSuggestion(){
+
+}
+
 function getTemp(url){
     fetch(url).then(response => {
         if (!response.ok) {
@@ -23,14 +40,24 @@ function getTemp(url){
         let currentTemperature = temperatureArray[indexInTime];
         let tempUnits = data.hourly_units.temperature_2m;
         document.getElementById("temperature").innerHTML = String(currentTemperature + " " + tempUnits);
+        let rainArray = data.hourly.rain;
+        rain(rainArray, timeArray, indexInTime);
+
+        getSuggestion();
     }).catch(error => {
         console.error("There was a problem", error);
     });
 }
 
 function getUrl(latitude, longitude){
-    return `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FChicago&forecast_days=1`;
+    let attemptedURL = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,precipitation,rain&hourly=temperature_2m,rain&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FChicago&forecast_days=1`;
+    console.log(attemptedURL);
+    return attemptedURL;
 }
+
+
+
+
 
 function getLatLong(city, state) {
     city = city.replace(/ /g, "+");

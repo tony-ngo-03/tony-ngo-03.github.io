@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>What should I Wear?</title>
+    <title>WSIW?</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <style>
@@ -17,26 +17,26 @@
         .middle_banner {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Vertically align to the top */
-            align-items: center; /* Horizontally center the content */
-            height: 100vh; /* Make sure the container takes the full viewport height */
-            margin-top: 5%;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin-top: 1%;
         }
 
         #cityForm {
-            text-align: center; /* Center the form contents horizontally within #cityForm */
-            margin-bottom: 20px; /* Add some margin to separate form and temperature */
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         #testing {
-            text-align: center; /* Center the content horizontally within #testing */
-            flex: 1; /* Allow #testing to expand and take remaining vertical space */
+            text-align: center;
+            flex: 1;
             font-size: xx-large;
         }
         
 
         #temperature {
-            margin: 0; /* Remove default margins */
+            margin: 0;
         }
 
 
@@ -50,7 +50,7 @@
         <nav class="top_button_background">
             <button onclick="goToPage('about')">About Me</button>
             <button onclick="goToPage('projects')">Projects</button>
-            <button onclick="goToPage('weather')">What should I Wear?</button>
+            <button onclick="goToPage('weather')">WSIW?</button>
         </nav>
     </header>
 
@@ -67,6 +67,8 @@
         </div>
         <div id="testing">
             <h1 id="temperature"></h1>  
+            <p id="rainHeader"></p>  
+            <p id="rain"></p>  
         </div>
     </main>
     <footer class="bottom_banner">
