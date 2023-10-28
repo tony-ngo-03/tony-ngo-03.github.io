@@ -1,35 +1,40 @@
-
-.top_banner {
+.top-nav {
     background-color: white;
     height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 9999;
 }
 
-
-.top_button_background {
-    display: flex;
+.top-nav button {
+    font-family: "Georgia";
+    background-color: white;
+    border: none;
+    color: gray;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
 }
 
-.bottom_banner {
-    height: 5%;
-    position: fixed;
+.bottom-sig {
     display: flex;
-    left: 0;
     bottom: 0;
     width: 100%;
     background-color: black;
-    padding: 15px;
     text-align: center;
     justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 
-.bottom_banner button {
+.bottom-sig button {
     font-family: "Georgia";
     background-color: black;
     border: none;
@@ -38,18 +43,3 @@
     font-size: 20px;
 }
 
-.top_button_background {
-    position: relative;
-}
-
-.top_button_background button {
-    font-family: "Georgia";
-    background-color: white;
-    border: none;
-    color: gray;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-}

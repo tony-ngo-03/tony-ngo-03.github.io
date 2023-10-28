@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <style>
-        body {
+        body{
             background: #b86b77;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
         }
 
         h1{
             font-family: "Georgia";
             text-align: center;
-            font-size: 70px;
+            font-size: 25px;
         }
+
         p{
             font-family: "Georgia";
             text-align: center;
-            font-size: 35px;
+        }
+
+        #courses{
+            height: 300px;
+            text-align: center;
+        }
+
+        #projects{
+            height: 300px;
+            text-align: center;
         }
     </style>
 </head>
@@ -37,9 +43,22 @@
     </header>
 
     <main>
-        <h1>TONY NGO</h1>
-        <p>Studying CS @ UT Austin</p>
+        
     </main>
+    <div id="courses">
+        <h1>Courses</h1>
+        <p>Click for a link for a list of all of my computer science courses. I am also minoring in business so those will be included as well.</p>
+        <button onclick="goToPage('courses')">Click here!</button>
+    </div>   
+
+    <div id="projects">
+        <h1>Projects</h1>
+        <p>Click on the link to see the projects that I have completed and the ones that I am working on!</p>
+        <button onclick="goToPage('projects')">Click here!</button>
+    </div>
+
+    
+
     <footer>
         <div class="bottom-sig">
             <button onclick="goToPage('index')">Home</button>

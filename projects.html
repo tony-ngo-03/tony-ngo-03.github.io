@@ -31,11 +31,13 @@
     </style>
 </head>
 <body>
-    <header class="top_banner">
-        <nav class="top_button_background">
-            <button onclick="goToPage('about')">About Me</button>
-            <button onclick="goToPage('projects')">Projects</button>
-        </nav>
+    <header>
+        <div class="top-nav">
+            <nav>
+                <button onclick="goToPage('about')">About</button>
+                <button onclick="goToPage('portfolio')">Portfolio</button>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -64,13 +66,9 @@
             </div>
         </div>
     </main>
-    
-
-    
-
-    <footer class="bottom_banner">
-        <div class="bottom_banner_button_background">
-            <button onclick="window.location.href = 'index.html'">Home</button>
+    <footer>
+        <div class="bottom-sig">
+            <button onclick="goToPage('index')">Home</button>
         </div>
     </footer>
 </body>

@@ -3,47 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About - Tony Ngo</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <style>
+        
         body{
             background: #b86b77;
             margin: 0;
         }
-        
-        #about_me{
-            display: flex;
-            flex-direction: column;
-            margin-top: 5%;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
 
-        #about_me img{
-            margin: 0 auto;
-        }
-
-        h1{
+        #background-text{
+            max-width: 750px;
             margin: auto;
-            justify-self: center;
+        }
+        h1{
+            font-family: "Georgia";
+            text-align: center;
+            font-size: 25px;
+        }
+
+        p{
+            font-family: "Georgia";
             text-align: center;
         }
 
-        #about_me p{
-            max-width: 65%;
-            font-size: 24px;
-        }
-
-        #display_songs_wrapper{
+        #songs-wrapper{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        .song_container{
+        .song-container{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -52,58 +44,55 @@
         iframe{
             width: 420px;
             height: 315px;
-            margin-top: 10%;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-bottom: 10%;
         }
 
     </style>
 </head>
 <body>
-    <header class="top_banner">
-        <nav class="top_button_background">
-            <button onclick="goToPage('about')">About Me</button>
-            <button onclick="goToPage('projects')">Projects</button>
-        </nav>
+    <header>
+        <div class="top-nav">
+            <nav>
+                <button onclick="goToPage('about')">About</button>
+                <button onclick="goToPage('portfolio')">Portfolio</button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div id="about_me">
-            <img src="" height="200" width="200">
-            <h1>Tony Ngo</h1>
-            <h1>Majoring in Computer Science & Minoring in Business</h1>
-            <p>I am a passionate problem solver with a deep love for computer science. Ever since joining
-            that robotics club in sixth grade, I have always been fascinated by the art of breaking down
-            complex issues into small, managable components and finding solutions. Beyond the classroom,
-            I thrive on hands-on experience, working on projects that spand both front-end and back-end
-            development. My favorites so far are this website, Pong, and Sisyphus Simulator. In my free 
-            time, I love to rollerskate, read, and listen to music! My goal is to continue exploring
-            and contributing to innovative solutions and ideas that make a meaningful impact in this world.
+        <div id="background-text">
+            <h1>Background</h1>
+            <p>I am currently a junior at the 
+                <a target="_blank" href="https://www.utexas.edu/">University of Texas at Austin</a>. I am orginally from Carrollton, TX.
+            </p>
+            <p>
+                From a smaller charter school system, I became fascinated by code! I took a robotics elective back in sixth grade and was instantly hooked by their block coding system. Ever since, I have been exploring software development and game development! To achieve my goals, I have been studying computer science, which has been an exciting experience! 
             </p>
         </div>
-        <div id="display_songs_wrapper">
+
+        <div id="background-text">
+            <h1>What am I doing now?</h1>
+            <p>
+                Currently, I am exploring the realm of computer science through my courses. I am also exploring a minor in business.
+            </p>
+        </div>
+        <div id="songs-wrapper">
             <h1>Here are some of my favorite songs right now!</h1>
-            <div class="song_container">
+            <div class="song-container">
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5SMCxRA6hB2jEhroaYfw6N?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/37CoOXIsgF3NzbK1zHZetk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6HexNTb392JS071DoTGo0y?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </div>
-        <div>
-            
-        </div>
-
-        
-        
 
     </main>
     
 
     
 
-    <footer class="bottom_banner">
-        <button onclick="window.location.href = 'index.html'">Home</button>
+    <footer>
+        <div class="bottom-sig">
+            <button onclick="goToPage('index')">Home</button>
+        </div>
     </footer>
 </body>
 </html>
