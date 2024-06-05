@@ -177,19 +177,19 @@ a{
 
 .dropdown-menu-education{
     width: 100%;
-    height: 30%;
+    height: fit-content;
     border: 1px solid red;
 }
 
 .dropdown-menu-experience{
     width: 100%;
-    height: 30%;
+    height: fit-content;
     border: 1px solid red;
 }
 
 .dropdown-menu-skills{
     width: 100%;
-    height: 30%;
+    height: fit-content;
     border: 1px solid red;
 }
 
@@ -215,4 +215,12 @@ a{
     height: 100%;
     float: right;
     border: 1px solid blue;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.show{
+    display: block;
 }

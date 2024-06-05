@@ -34,14 +34,55 @@
                     <div class="resume-download">link for full pdf</div>
                 </div>
                 <div class="dropdown-menu">
-                    <div class="dropdown-menu-education">Education</div>
-                    <div class="dropdown-menu-experience">Experience</div>
-                    <div class="dropdown-menu-skills">Skills</div>
+                    <div>
+                        <label for="education-button">Education</label>
+                        <button id="education-button" onclick="toggleDropdown('dropdown-1')">V</button>
+                    </div>
+                    <div class="dropdown-menu-education">
+                        <div id="dropdown-1" class="dropdown-content">
+                            <p>University of Texas - Class of 2025</p>
+                            <p>Bachelor of Science in Computer Science with a minor in Business</p>
+                            <p>Overall GPA: </p>
+                            <p>Major Specific GPA: </p> 
+                            <a href="courses.html">Courses I've taken</a>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="experience-button">Experience</label>
+                        <button id="experience-button" onclick="toggleDropdown('dropdown-2')">V</button>
+                    </div>
+                    <div class="dropdown-menu-experience">
+                        <div id="dropdown-2" class="dropdown-content">
+                            <p>University of Texas - Class of 2025</p>
+                            <p>Bachelor of Science in Computer Science with a minor in Business</p>
+                            <p>Overall GPA: </p>
+                            <p>Major Specific GPA: </p> 
+                            <a href="courses.html">Courses I've taken</a>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="skills-button">Skills</label>
+                        <button id="skills-button" onclick="toggleDropdown('dropdown-3')">V</button>
+                    </div>
+                    <div class="dropdown-menu-skills">
+                        <div id="dropdown-3" class="dropdown-content">
+                            <p>University of Texas - Class of 2025</p>
+                            <p>Bachelor of Science in Computer Science with a minor in Business</p>
+                            <p>Overall GPA: </p>
+                            <p>Major Specific GPA: </p> 
+                            <a href="courses.html">Courses I've taken</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
         <footer>
 
         </footer>
+        <script>
+            function toggleDropdown(dropdownId){
+                document.getElementById(dropdownId).classList.toggle("show");
+            }
+        </script>
     </body>
 </html>
