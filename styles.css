@@ -1,18 +1,20 @@
 :root{
-    --background-color: #0c2318;
-    --color-1: #a63d40;
-    --color-2: #e9b872;
-    --color-3: #90a959;
-    --color-4: #6494aa;
+    --background-color: #067BB1;
+    --color-1: #F0F7F4;
+    --color-2: #000000;
+    --color-3: #363946;
+    --color-4: #696773;
 }
-/* 
-*{
-    border: 1px solid black;
-} */
+
 
 body{
-    background-color: white;
+    background-color: var(--background-color);
 }
+
+a, p, h1, h2, fieldset{
+    color: var(--color-1);
+}
+
 
 .header-title-nav-wrapper{
     display: flex;
@@ -28,7 +30,7 @@ body{
 }
 
 a{
-    color: black;
+    /* color: black; */
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -47,12 +49,12 @@ a{
     padding-right: 10%;
 }
 
-.photo, #bio{
+/* .photo, #bio{
     border: 1px solid black;
-}
+} */
 
 #picture-bio{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 70%;
     height: 600px;
     margin-top: 5%;
@@ -64,36 +66,43 @@ a{
 .photo{
     width: 39%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     float: left;
 }
 
 .photo img{
     width: 100%;
-    height: 70%;
 }
 
 .bio{
     width: 59%;
     height: 100%;
-    border: 1px solid blue;
     float: right;
 }
 
 .bio p{
-    padding-top: 10%;
     text-align: left;
-    
+    font-size: 50px;
 }
 
-.about-me{
+.about-me-container{
     width: 70%;
     height: 600px;
-    border: 1px solid black;
-    margin-top: 5%;
+
+    margin-top: 10%;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+
+    text-align: center;
+}
+
+.about-me-container h1{
+    font-size: 45px;
+}
+
+.about-me-container p{
+    font-size: 35px;
 }
 
 .project-title{
@@ -110,7 +119,7 @@ a{
 .projects-container{
     width: 80%;
     height: 200vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 2%;
     margin-bottom: auto;
     margin-left: auto;
@@ -120,28 +129,28 @@ a{
 .project-wrapper{
     width: 100%;
     height: 20%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 1%;
 }
 
 .project-info{
     width: 30%;
     height: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     float: left;
 }
 
 .project-bio{
     width: 60%;
     height: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     float: right;
 }
 
 .resume-container{
     width: 80%;
     height: 700px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 10%;
     margin-bottom: auto;
     margin-left: auto;
@@ -152,19 +161,19 @@ a{
     width: 30%;
     height: 500px;
     float: left;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .resume-text{
     width: 100%;
     height: 20%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .resume-download{
     width: 100%;
     height: 20%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-top: 10%;
 }
 
@@ -172,31 +181,31 @@ a{
     width: 50%;
     height: 100%;
     float: right;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 }
 
 .dropdown-menu-education{
     width: 100%;
     height: fit-content;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .dropdown-menu-experience{
     width: 100%;
     height: fit-content;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .dropdown-menu-skills{
     width: 100%;
     height: fit-content;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .contact-form-container{
     width: 80%;
     height: 800px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 5%;
     margin-bottom: auto;
     margin-left: auto;
@@ -207,14 +216,14 @@ a{
     width: 40%;
     height: 100%;
     float: left;
-    border: 1px solid red;
+    /* border: 1px solid +red; */
 }
 
 .contact-form{
     width: 50%;
     height: 100%;
     float: right;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .dropdown-content{
