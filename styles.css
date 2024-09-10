@@ -6,7 +6,6 @@
     --color-4: #696773;
 }
 
-
 body{
     background-color: var(--background-color);
 }
@@ -17,6 +16,10 @@ a, p, h1, h2, fieldset, li, hr{
 
 p{
     font-size: 20px;
+}
+
+.no-line{
+    text-decoration: none;
 }
 
 .header-title-nav-wrapper{
@@ -249,7 +252,6 @@ iframe{
 .project-bio p{
     font-size: large;
 }
-
 
 .resume-text{
     font-size: 75px;
