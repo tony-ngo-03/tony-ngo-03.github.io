@@ -199,38 +199,26 @@ a{
     height: fit-content;
 }
 
-.contact-form-container{
+.contact-container{
     width: 80%;
-    height: 800px;
-    margin-top: 5%;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    margin: auto;   
 }
 
-.contact-form-text{
-    width: 40%;
-    height: 100%;
-    float: left;
+.contact-info{
+    text-align: center;
 }
 
 .contact-form{
-    width: 50%;
-    height: 100%;
-    float: right;
+    width: 60%;
+    height: auto;
+    margin: auto;
 }
 
-.contact-form legend{
-    font-size: 30px;
-}
-
-.contact-form input{
-    height: 35px;
-    width: 35%;
-}
-
-.contact-form label{
-    font-size: 20px;
+.contact-form textarea{
+    width: 100%;
+    height: 100px;
+    resize: vertical;
 }
 
 .dropdown-content{

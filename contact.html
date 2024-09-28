@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <title>Tony Ngo - Contact</title>
     </head>
     <body>
@@ -29,34 +30,30 @@
             </div>
         </header>
         <main>
-            
-            <div class="contact-form-container">
-                <div class="contact-form-text">
-                    <h1>Contact Me!</h1>
-                    <a href="mailto:tonyong@utexas.edu">tonyngo@utexas.edu</a>
-                </div>
-
-                <!-- <div class="contact-form">
-                    <h1><em>Currently does not work!</em></h1>
-                    <form>
+            <h1 class="text-center">Contact Me</h1>
+            <div class="contact-container">
+                <section class="contact-info">
+                    <h2>Get in Touch!</h2>
+                    <p>If you have any questions, feel free to reach out to me!</p>
+                    <p>Email: <a href="mailto:tonyngo@utexas.edu">tonyngo@utexas.edu</a></p>
+                </section>
+                <section class="contact-form">
+                    <form id="contact-form">
                         <fieldset>
                             <legend>Name</legend>
-                            <label>First Name</label>
-                            <input type="text" placeholder="Jane" required/>
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Doe" required/>
+                            <input type="text" id="name" name="name" required>
                         </fieldset>
                         <fieldset>
                             <legend>Email</legend>
-                            <input type="email" placeholder="jdoe@email.com" required/>
-                        </fieldset>
+                            <input type="email" id="email" name="email" required>    
+                        </fieldset>  
                         <fieldset>
                             <legend>Message</legend>
-                            <textarea rows="10" cols="100"></textarea>
+                            <textarea id="message" name="message" required></textarea>
                         </fieldset>
-                        <input type="submit" value="Submit" />
+                        <button type="submit">Send Message</button>
                     </form>
-                </div> -->
+                </section>
             </div>
         </main>
         <footer>
