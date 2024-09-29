@@ -169,6 +169,10 @@ a{
     margin-right: auto;
 }
 
+.resume-container h1, p, label, li, button, a{
+    font-family: 'Merriweather', sans-serif;
+}
+
 .resume{
     width: 50%;
     height: 500px;
