@@ -248,6 +248,9 @@ a{
     width: 100%;
 }
 
+textarea[type="text"], textarea[type="email"]{
+    font-family: 'Merriweather', sans-serif;
+}
 
 .dropdown-content{
     display: none;
@@ -291,6 +294,25 @@ iframe{
 .resume-text{
     font-size: 75px;
     color: var(--color-1);
+}
+
+.courses-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.courses-container h1{
+    font-family: 'Merriweather', sans-serif;
+}
+
+.course-list{
+    text-align: center;
+}
+
+.course-list h2, p{
+    font-family: 'Merriweather', sans-serif;
 }
 
 label{
