@@ -30,34 +30,35 @@
             </div>
         </header>
         <main>
-            <h1 class="text-center">Contact Me</h1>
+            <h1 class="text-center" style="font-family: 'Merriweather'">Contact Me</h1>
             <div class="contact-container">
                 <section class="contact-info">
                     <h2>Get in Touch!</h2>
                     <p>If you have any questions, feel free to reach out to me!</p>
                     <p>Email: <a href="mailto:tonyngo@utexas.edu">tonyngo@utexas.edu</a></p>
                 </section>
-                <section class="contact-form">
+                <section class="contact-form-container">
                     <form id="contact-form">
-                        <fieldset>
+                        <fieldset id="name-field">
                             <legend>Name</legend>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name-input" name="name" required>
                         </fieldset>
-                        <fieldset>
+                        <fieldset id="email-field">
                             <legend>Email</legend>
-                            <input type="email" id="email" name="email" required>    
+                            <input type="email" id="email-input" name="email" required>    
                         </fieldset>  
-                        <fieldset>
+                        <fieldset id="message-field">
                             <legend>Message</legend>
-                            <textarea id="message" name="message" required></textarea>
+                            <textarea id="message-input" name="message" required></textarea>
                         </fieldset>
-                        <button type="submit">Send Message</button>
+                        <div class="text-center">
+                            <button type="submit" id="message-send-button">Send Message</button>
+                        </div>
                     </form>
                 </section>
             </div>
         </main>
         <footer>
-
         </footer>
     </body>
 </html>

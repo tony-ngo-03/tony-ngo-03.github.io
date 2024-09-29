@@ -209,17 +209,45 @@ a{
     text-align: center;
 }
 
-.contact-form{
+.contact-info h2, p, a{
+    font-family: 'Merriweather', sans-serif;
+}
+
+.contact-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60%;
     height: auto;
     margin: auto;
 }
 
-.contact-form textarea{
+.contact-form-container legend, button{
+    font-family: 'Merriweather', sans-serif;
+}
+
+.contact-form-container textarea{
     width: 100%;
     height: 100px;
     resize: vertical;
 }
+
+#contact-form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name-field, #email-field, #message-field{
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#name-input, #email-input{
+    width: 100%;
+}
+
 
 .dropdown-content{
     display: none;
