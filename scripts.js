@@ -6,7 +6,8 @@ form.addEventListener('submit', function(e) {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    // add logic sometime later
-
-
+    const subject = encodeURIComponent("New message from " + name);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+    const mailLink = `mailto:tonyngo@utexas.edu?subject=${subject}&body=${body}`;
+    window.location.href = mailLink;
 });
